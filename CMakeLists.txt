@@ -25,16 +25,17 @@ FetchContent_Declare(
   GIT_TAG 5.0.0)
 FetchContent_GetProperties(eigen)
 FetchContent_MakeAvailable(eigen)
-set(EIGEN_BUILD_TESTING
-    OFF
-    CACHE BOOL "" FORCE)
-set(BUILD_TESTING
-    OFF
-    CACHE BOOL "" FORCE)
-set(EIGEN_BUILD_DOC
-    OFF
-    CACHE BOOL "" FORCE)
 message(STATUS "${Green}eigen fetched to: ${eigen_SOURCE_DIR}${ColorReset}")
+
+message(STATUS "${Yellow}Fetching toml++...${ColorReset}")
+FetchContent_Declare(
+  tomlplusplus
+  GIT_REPOSITORY https://github.com/marzer/tomlplusplus.git
+  GIT_TAG v3.4.0)
+FetchContent_GetProperties(tomlplusplus)
+FetchContent_MakeAvailable(tomlplusplus)
+message(
+  STATUS "${Green}toml++ fetched to: ${tomlplusplus_SOURCE_DIR}${ColorReset}")
 
 # ================================================================================
 file(GLOB_RECURSE DMAO_SOURCES CONFIGURE_DEPENDS

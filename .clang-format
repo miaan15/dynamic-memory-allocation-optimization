@@ -1,0 +1,67 @@
+BasedOnStyle: LLVM
+Language: Cpp
+
+UseTab: Never
+IndentWidth: 4
+TabWidth: 4
+IndentCaseLabels: true
+
+# Line width
+ColumnLimit: 100
+
+# Breaking & alignment
+BreakBeforeBinaryOperators: All
+BreakTemplateDeclarations: Yes
+AlignAfterOpenBracket: BlockIndent
+BinPackArguments: false
+BinPackParameters: false
+AlignConsecutiveAssignments: AcrossComments
+AlignConsecutiveDeclarations: AcrossComments
+AccessModifierOffset: -4
+
+# Constructors
+PackConstructorInitializers: NextLineOnly
+BreakConstructorInitializers: BeforeComma
+ConstructorInitializerIndentWidth: 2
+
+# Concepts
+BreakBeforeConceptDeclarations: Always
+RequiresClausePosition: OwnLine
+IndentRequiresClause: false
+
+# Includes
+SortIncludes: true
+IncludeBlocks: Preserve
+FixNamespaceComments: true
+IncludeCategories:
+  - Regex: '^<.*>'
+    Priority: 1
+  - Regex: '^".*"'
+    Priority: 2
+
+# Allows
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse
+AllowShortLoopsOnASingleLine: true
+AllowShortCaseLabelsOnASingleLine: true
+
+# Spacing
+SpaceBeforeParens: ControlStatementsExceptControlMacros
+
+# Preprocessor
+IndentPPDirectives: AfterHash
+
+# Empty lines
+EmptyLineBeforeAccessModifier: Always
+
+# Penalties
+PenaltyBreakComment: 50
+PenaltyBreakString: 600
+PenaltyReturnTypeOnItsOwnLine: 200
+PenaltyBreakOpenParenthesis: 50
+PenaltyBreakScopeResolution: 600
+PenaltyBreakBeforeMemberAccess: 100
+PenaltyBreakBeforeFirstCallParameter: 300
+PenaltyExcessCharacter: 1000000
+
+

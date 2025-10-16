@@ -1,0 +1,36 @@
+Checks: >
+  -*,
+
+  clang-analyzer-*,
+
+  readability-*,
+  -readability-braces-around-statements,
+  -readability-magic-numbers,
+  -readability-redundant-access-specifiers,
+  -readability-identifier-naming,
+  -readability-identifier-length,
+
+  modernize-*,
+  -modernize-use-using,
+
+  cppcoreguidelines-*,
+  -cppcoreguidelines-pro-*,
+  -cppcoreguidelines-special-member-functions,
+  -cppcoreguidelines-owning-memory,
+  -cppcoreguidelines-avoid-goto,
+  -cppcoreguidelines-avoid-magic-numbers,
+  -cppcoreguidelines-non-private-member-variables-in-classes,
+
+  performance-*,
+  -performance-unnecessary-value-param,
+
+  misc-*,
+  -misc-misplaced-const,
+  -misc-no-recursion,
+  -misc-non-private-member-variables-in-classes,
+
+  bugprone-*,
+  -bugprone-suspicious-missing-comma,
+  -bugprone-sizeof-expression,
+
+  llvm-*,

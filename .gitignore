@@ -4,6 +4,7 @@ GEMINI.md
 # Directories
 build/
 .cache/
+.vscode/
 
 # Prerequisites
 *.d

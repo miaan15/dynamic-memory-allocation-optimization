@@ -53,7 +53,7 @@ if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU" AND WIN32)
   target_link_libraries(dmao PUBLIC stdc++exp)
 endif()
 
-target_link_libraries(dmao PUBLIC eigen)
+target_link_libraries(dmao PUBLIC eigen tomlplusplus::tomlplusplus)
 
 target_sources(
   dmao
